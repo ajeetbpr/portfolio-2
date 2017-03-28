@@ -13,7 +13,7 @@
     "prod:stop": "pm2 delete server",
     "test": "eslint src && flow && jest --coverage",
     "precommit": "npm test",
-    "prepush": "npm test && npm prod:build"
+    "prepush": "npm test && npm run-script prod:build"
   },
   "dependencies": {
     "babel-cli": "^6.24.0",
