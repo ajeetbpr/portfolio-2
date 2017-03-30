@@ -16,7 +16,7 @@ const HomePage = () =>
     />
     <div className="jumbotron">
       <div className="container">
-        <h1 className="display-3 mb-4"><p>Hi, I am Caroline</p></h1>
+        <h1 className="display-4 mb-2"><p>Hi, I am Caroline</p></h1>
       </div>
     </div>
     <div className="container">

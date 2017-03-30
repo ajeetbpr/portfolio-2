@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { HOME_PAGE_ROUTE } from '../../routes'
 
-const title = 'Page Not Found!'
+const title = "You're Lost, buddy!"
 
 const NotFoundPage = () =>
   <div className="container mt-4">
@@ -13,7 +13,7 @@ const NotFoundPage = () =>
     <div className="row">
       <div className="col-12">
         <h1>{title}</h1>
-        <div><Link to={HOME_PAGE_ROUTE}>Go to the homepage</Link>.</div>
+        <div><Link to={HOME_PAGE_ROUTE}>Go back home</Link></div>
       </div>
     </div>
   </div>
