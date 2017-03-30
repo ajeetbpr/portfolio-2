@@ -13,28 +13,20 @@ const title = 'Cartography'
 const styles = {
   onHover: {
     '&:hover': {
-      color: 'green',
+      opacity: '0.8',
     },
-  },
-  '@media (max-width: 800px)': {
-    resizeMe: {
-      color: 'red',
-    },
-  },
-  specialButton: {
-    composes: ['btn', 'btn-primary'],
-    backgroundColor: 'limegreen',
   },
 }
 
-const CartogPage = () =>
+const CartogPage = ({ classes }: { classes: Object }) =>
   <div className="container mt-4">
     <Helmet title={title} />
     <div className="row">
       <div className="col-12">
         <h1>{title}</h1>
-        <div><Link to={HOME_PAGE_ROUTE}>Go to the homepage</Link>.</div>
+        <div><Link to={HOME_PAGE_ROUTE}>Go to the homepage</Link></div>
       </div>
+      <div className={classes.onHover} />
     </div>
   </div>
 
