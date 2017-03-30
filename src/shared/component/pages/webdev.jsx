@@ -5,9 +5,9 @@ import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { HOME_PAGE_ROUTE } from '../../routes'
 
-const title = 'Page Not Found!'
+const title = 'Web Dev'
 
-const NotFoundPage = () =>
+const WebDevPage = () =>
   <div className="container mt-4">
     <Helmet title={title} />
     <div className="row">
@@ -18,4 +18,4 @@ const NotFoundPage = () =>
     </div>
   </div>
 
-export default NotFoundPage
+export default WebDevPage
