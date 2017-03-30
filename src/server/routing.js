@@ -2,10 +2,14 @@
 
 import {
   homePage,
+  webDevPage,
+  cartogPage,
 } from './controller'
 
 import {
   HOME_PAGE_ROUTE,
+  WEB_DEV_ROUTE,
+  CARTOG_ROUTE,
 } from '../shared/routes'
 
 import renderApp from './render-app'
@@ -13,6 +17,14 @@ import renderApp from './render-app'
 export default (app: Object) => {
   app.get(HOME_PAGE_ROUTE, (req, res) => {
     res.send(renderApp(req.url, homePage()))
+  })
+
+  app.get(WEB_DEV_ROUTE, (req, res) => {
+    res.send(renderApp(req.url, webDevPage()))
+  })
+
+  app.get(CARTOG_ROUTE, (req, res) => {
+    res.send(renderApp(req.url, cartogPage()))
   })
 
   app.get('/500', () => {
