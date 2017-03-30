@@ -3,6 +3,7 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router'
+import Helmet from 'react-helmet'
 
 import App from './../shared/app'
 import { APP_CONTAINER_CLASS, STATIC_PATH, WDS_PORT } from '../shared/config'
@@ -13,12 +14,14 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
     <StaticRouter location={location} context={routerContext}>
       <App />
     </StaticRouter>)
+  const head = Helmet.rewind()
 
   return (
     `<!doctype html>
         <html>
           <head>
-            <title>Page Title</title>
+            ${head.title}
+            ${head.meta}
             <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
           </head>
           <body>
