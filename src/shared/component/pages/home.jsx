@@ -16,21 +16,24 @@ import {
 } from '../../routes'
 
 const styles = {
-  cartBox: {
-    paddingBottom: '300px',
-    'background-color': 'red',
-  },
   webdevBox: {
     paddingBottom: '300px',
-    'background-color': 'blue',
+    'background-color': '#41dff4',
+    opacity: '0.8',
+  },
+  cartBox: {
+    paddingBottom: '300px',
+    'background-color': '#42f4d1',
+    opacity: '0.8',
   },
   aboutBox: {
     paddingBottom: '300px',
-    'background-color': 'green',
+    'background-color': '#41f456',
+    opacity: '0.8',
   },
   onHover: {
     '&:hover': {
-      opacity: '0.7',
+      opacity: '0.4',
     },
   },
   links: {
@@ -57,7 +60,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
     <div className="container">
       <div className="row">
 
-        <div className="col-md-4">
+        <div className="col-md-4" style={{padding: 0}}>
           <Link to={WEB_DEV_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
             <div className={classes.onHover}>
               <div className={classes.webdevBox}>
@@ -68,18 +71,18 @@ const HomePage = ({ classes }: { classes: Object }) =>
           </Link>
         </div>
 
-        <div className="col-md-4">
+        <div className="col-md-4" style={{padding: 0}}>
           <Link to={CARTOG_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
             <div className={classes.onHover}>
               <div className={classes.cartBox}>
-                <h3 className="mb-10">Cartography & GIS</h3>
+                <h3 className="mb-10">Cartography</h3>
                 <p>Maps Maps Maps</p>
               </div>
             </div>
           </Link>
         </div>
 
-        <div className="col-md-4">
+        <div className="col-md-4" style={{padding: 0}}>
           <Link to={ABOUT_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
             <div className={classes.onHover}>
               <div className={classes.aboutBox}>

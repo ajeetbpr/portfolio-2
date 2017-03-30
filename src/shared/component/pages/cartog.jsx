@@ -13,8 +13,11 @@ const title = 'Cartography'
 const styles = {
   onHover: {
     '&:hover': {
-      opacity: '0.8',
+      opacity: '0.4',
     },
+  },
+  homeLink: {
+    'text-decoration': 'none !important',
   },
 }
 
@@ -24,9 +27,8 @@ const CartogPage = ({ classes }: { classes: Object }) =>
     <div className="row">
       <div className="col-12">
         <h1>{title}</h1>
-        <div><Link to={HOME_PAGE_ROUTE}>Go to the homepage</Link></div>
+        <div className={classes.onHover}><Link to={HOME_PAGE_ROUTE} className={classes.homeLink}>Go to the homepage</Link></div>
       </div>
-      <div className={classes.onHover} />
     </div>
   </div>
 
