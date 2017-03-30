@@ -1,12 +1,50 @@
 // @flow
 
+import $ from 'jquery'
 import React from 'react'
 import Helmet from 'react-helmet'
+import { Link } from 'react-router-dom'
+import injectSheet from 'react-jss'
 
-import ContactModal from '../contact-modal'
+// import Images from '../../../../public/assets/images'
 import { APP_NAME } from '../../config'
 
-const HomePage = () =>
+import {
+  WEB_DEV_ROUTE,
+  CARTOG_ROUTE,
+  ABOUT_ROUTE,
+} from '../../routes'
+
+const styles = {
+  cartBox: {
+    paddingBottom: '300px',
+    'background-color': 'red',
+  },
+  webdevBox: {
+    paddingBottom: '300px',
+    'background-color': 'blue',
+  },
+  aboutBox: {
+    paddingBottom: '300px',
+    'background-color': 'green',
+  },
+  onHover: {
+    '&:hover': {
+      opacity: '0.7',
+    },
+  },
+  links: {
+    color: '#000000 !important',
+    'text-decoration': 'none !important',
+  },
+}
+
+const handleNavLinkClick = () => {
+  $('body').scrollTop(0)
+  $('.js-navbar-collapse').collapse('hide')
+}
+
+const HomePage = ({ classes }: { classes: Object }) =>
   <div>
     <Helmet
       meta={[
@@ -14,31 +52,45 @@ const HomePage = () =>
         { property: 'og:title', content: APP_NAME },
       ]}
     />
-    <div className="jumbotron">
-      <div className="container">
-        <h1 className="display-4 mb-2"><p>Hi, I am Caroline</p></h1>
-      </div>
-    </div>
+    <div className="jumbotron" />
+
     <div className="container">
       <div className="row">
-        <div className="col-md-4 mb-4">
-          <h3 className="mb-3">Something About Me</h3>
-          <p>Me Me Meep</p>
-          <p>
-            <button type="button" role="button" data-toggle="modal" data-target=".js-modal-example" className="btn btn-primary">Contact Caroline</button>
-          </p>
+
+        <div className="col-md-4">
+          <Link to={WEB_DEV_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
+            <div className={classes.onHover}>
+              <div className={classes.webdevBox}>
+                <h3 className="mb-10">Web Development</h3>
+                <p>Code Code Code</p>
+              </div>
+            </div>
+          </Link>
         </div>
-        <div className="col-md-4 mb-4">
-          <h3 className="mb-3">Something About WebDev</h3>
-          <p>Code Code Code</p>
+
+        <div className="col-md-4">
+          <Link to={CARTOG_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
+            <div className={classes.onHover}>
+              <div className={classes.cartBox}>
+                <h3 className="mb-10">Cartography & GIS</h3>
+                <p>Maps Maps Maps</p>
+              </div>
+            </div>
+          </Link>
         </div>
-        <div className="col-md-4 mb-4">
-          <h3 className="mb-3">Something About Cartography</h3>
-          <p>Maps Maps Maps</p>
+
+        <div className="col-md-4">
+          <Link to={ABOUT_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
+            <div className={classes.onHover}>
+              <div className={classes.aboutBox}>
+                <h3 className="mb-10">About Me</h3>
+                <p>Me Me Me</p>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
-    <ContactModal />
   </div>
 
-export default HomePage
+export default injectSheet(styles)(HomePage)

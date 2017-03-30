@@ -3,13 +3,14 @@
 import $ from 'jquery'
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+
 import { APP_NAME } from '../config'
 
 import {
   HOME_PAGE_ROUTE,
   WEB_DEV_ROUTE,
   CARTOG_ROUTE,
-  NOT_FOUND_PAGE_ROUTE,
+  ABOUT_ROUTE,
 } from '../routes'
 
 const handleNavLinkClick = () => {
@@ -29,7 +30,7 @@ const NavBar = () =>
           { route: HOME_PAGE_ROUTE, label: 'Home' },
           { route: WEB_DEV_ROUTE, label: 'Web Dev' },
           { route: CARTOG_ROUTE, label: 'Cartography' },
-          { route: NOT_FOUND_PAGE_ROUTE, label: '404 Page Not Found' },
+          { route: ABOUT_ROUTE, label: 'About Me' },
         ].map(link => (
           <li className="nav-item" key={link.route}>
             <NavLink to={link.route} className="nav-link" activeStyle={{ color: 'white' }} exact onClick={handleNavLinkClick}>{link.label}</NavLink>

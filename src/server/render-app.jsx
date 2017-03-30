@@ -3,16 +3,20 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router'
+import { SheetsRegistry, SheetsRegistryProvider } from 'react-jss'
 import Helmet from 'react-helmet'
 
 import App from './../shared/app'
-import { APP_CONTAINER_CLASS, STATIC_PATH, WDS_PORT } from '../shared/config'
+import { APP_CONTAINER_CLASS, JSS_SSR_CLASS, STATIC_PATH, WDS_PORT } from '../shared/config'
 import { isProd } from '../shared/util'
 
 const renderApp = (location: string, plainPartialState: ?Object, routerContext: ?Object = {}) => {
+  const sheets = new SheetsRegistry()
   const appHtml = ReactDOMServer.renderToString(
     <StaticRouter location={location} context={routerContext}>
-      <App />
+      <SheetsRegistryProvider registry={sheets}>
+        <App />
+      </SheetsRegistryProvider>
     </StaticRouter>)
   const head = Helmet.rewind()
 
@@ -23,6 +27,7 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
             ${head.title}
             ${head.meta}
             <link rel="stylesheet" href="${STATIC_PATH}/css/bootstrap.min.css">
+            <style class="${JSS_SSR_CLASS}">${sheets.toString()}</style>
           </head>
           <body>
             <div class="${APP_CONTAINER_CLASS}">${appHtml}</div>

@@ -7,6 +7,8 @@ import { HOME_PAGE_ROUTE } from '../../routes'
 
 const title = "You're Lost, buddy!"
 
+// comment
+
 const NotFoundPage = () =>
   <div className="container mt-4">
     <Helmet title={title} />
