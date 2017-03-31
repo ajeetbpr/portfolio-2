@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 // import Images from '../../../../public/assets/images'
 import { HOME_PAGE_ROUTE } from '../../routes'
 
-const title = 'Web Dev'
+const title = 'Web Applications'
 
 const styles = {
   onHover: {
@@ -23,7 +23,7 @@ const styles = {
     'background-color': '#41dff4',
   },
   projectBox: {
-    'background-color': '#41c4f4',
+    'background-color': '#35b5c6',
   },
 }
 
@@ -39,19 +39,38 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
 
     <div className={classes.mainBox}>
       <div className="col-md-12">
-        <h3 className="container mb-10">Words and things</h3>
-        <p>Code Code Code Code Code Code Code Code Code Code Code Code</p>
+        <p className="pl-4 pt-2"> words about web development </p>
+        <p className="pl-4"> so many words </p>
+        <p className="pl-4 pb-2"> more words </p>
       </div>
     </div>
 
     <div className={classes.projectBox}>
       <div className="col-md-12">
-        <h3 className="container mb-10">Project 1</h3>
-        <p>Code Code Code Code Code Code Code Code Code Code Code Code</p>
+        <h3 className="container mb-10 pt-2">SkilletHub</h3>
+        <p className="pl-4 pb-2">words about this project</p>
       </div>
     </div>
 
-    <div className={classes.onHover}><Link to={HOME_PAGE_ROUTE} className={classes.homeLink}>Go to the homepage</Link></div>
+    <div className={classes.projectBox}>
+      <div className="col-md-12">
+        <h3 className="container mb-10 pt-2">UberEco</h3>
+        <p className="pl-4 pb-2">words about this project</p>
+      </div>
+    </div>
+
+    <div className={classes.projectBox}>
+      <div className="col-md-12">
+        <h3 className="container mb-10 pt-2">Crypto-tracker</h3>
+        <p className="pl-4 pb-2">words about this project</p>
+      </div>
+    </div>
+
+    <div className="col-md-1 pt-4">
+      <div className={classes.onHover}>
+        <Link to={HOME_PAGE_ROUTE} className={classes.homeLink}>Home</Link>
+      </div>
+    </div>
   </div>
 
 export default injectSheet(styles)(WebDevPage)

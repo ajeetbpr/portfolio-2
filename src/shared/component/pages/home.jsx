@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import injectSheet from 'react-jss'
 
-// import Images from '../../../../public/assets/images'
+import Images from '../../../../public/assets/images'
 import { APP_NAME } from '../../config'
 
 import {
@@ -17,23 +17,20 @@ import {
 
 const styles = {
   webdevBox: {
-    paddingBottom: '300px',
+    height: '200px',
     'background-color': '#41dff4',
-    opacity: '0.8',
   },
   cartBox: {
-    paddingBottom: '300px',
+    height: '200px',
     'background-color': '#42f4d1',
-    opacity: '0.8',
   },
   aboutBox: {
-    paddingBottom: '300px',
-    'background-color': '#41f456',
-    opacity: '0.8',
+    height: '200px',
+    'background-color': '#41f47c',
   },
   onHover: {
     '&:hover': {
-      opacity: '0.4',
+      opacity: '.6',
     },
   },
   links: {
@@ -55,39 +52,44 @@ const HomePage = ({ classes }: { classes: Object }) =>
         { property: 'og:title', content: APP_NAME },
       ]}
     />
-    <div className="jumbotron" />
+    <div className="jumbotron" style={{ padding: 0 }}>
+      <img src={Images.golden_gate_bridge} alt="asdf" />
+    </div>
+
+    <div className="container">
+      <div className="row">
+        <h3 className="mb-4 ml-2"> Hey there! </h3>
+      </div>
+    </div>
 
     <div className="container">
       <div className="row">
 
-        <div className="col-md-4" style={{padding: 0}}>
+        <div className="col-md-4">
           <Link to={WEB_DEV_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
             <div className={classes.onHover}>
               <div className={classes.webdevBox}>
-                <h3 className="mb-10">Web Development</h3>
-                <p>Code Code Code</p>
+                <h3 className="pl-4 pt-3">Web Apps</h3>
               </div>
             </div>
           </Link>
         </div>
 
-        <div className="col-md-4" style={{padding: 0}}>
+        <div className="col-md-4">
           <Link to={CARTOG_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
             <div className={classes.onHover}>
               <div className={classes.cartBox}>
-                <h3 className="mb-10">Cartography</h3>
-                <p>Maps Maps Maps</p>
+                <h3 className="pl-4 pt-3">Cartography</h3>
               </div>
             </div>
           </Link>
         </div>
 
-        <div className="col-md-4" style={{padding: 0}}>
+        <div className="col-md-4">
           <Link to={ABOUT_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
             <div className={classes.onHover}>
               <div className={classes.aboutBox}>
-                <h3 className="mb-10">About Me</h3>
-                <p>Me Me Me</p>
+                <h3 className="pl-4 pt-3">About meta</h3>
               </div>
             </div>
           </Link>
