@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import injectSheet from 'react-jss'
 
-import Images from '../../../../public/assets/images'
+import Images from '../../assets/images'
 import { APP_NAME } from '../../config'
 
 import {

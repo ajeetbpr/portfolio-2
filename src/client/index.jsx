@@ -4,6 +4,7 @@ import 'babel-polyfill'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
 import { BrowserRouter } from 'react-router-dom'
 import $ from 'jquery'
 import Tether from 'tether'
@@ -19,7 +20,18 @@ const rootEl = document.querySelector(APP_CONTAINER_SELECTOR)
 
 const wrapApp = AppComponent =>
   <BrowserRouter>
-    <AppComponent />
+    <AppContainer>
+      <AppComponent />
+    </AppContainer>
   </BrowserRouter>
 
 ReactDOM.render(wrapApp(App), rootEl)
+
+if (module.hot) {
+  // flow-disable-next-line
+  module.hot.accept('../shared/app', () => {
+    // eslint-disable-next-line global-require
+    const NextApp = require('../shared/app').default
+    ReactDOM.render(wrapApp(NextApp), rootEl)
+  })
+}
