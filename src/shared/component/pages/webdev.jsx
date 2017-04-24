@@ -11,6 +11,9 @@ import { HOME_PAGE_ROUTE } from '../../routes'
 const title = 'Web Applications'
 
 const styles = {
+  fontfamily: {
+
+  },
   onHover: {
     '&:hover': {
       opacity: '0.4',
@@ -45,24 +48,39 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
 
-    <div className={classes.projectBox}>
-      <div className="col-md-12">
-        <h3 className="container mb-10 pt-2">SkilletHub</h3>
-        <p className="pl-4 pb-2">words about this project</p>
+    <div className="container pt-4" style={{ padding: 0 }}>
+      <div className={classes.projectBox}>
+        <div className="col-md-12">
+          <h3 className="container mb-10 pt-2">SkilletHub</h3>
+          <p className="pl-4 pb-2">Words about SkilletHub</p>
+        </div>
+        <div className="container">
+          <div className="pb-4" />
+        </div>
       </div>
     </div>
 
-    <div className={classes.projectBox}>
-      <div className="col-md-12">
-        <h3 className="container mb-10 pt-2">UberEco</h3>
-        <p className="pl-4 pb-2">words about this project</p>
+    <div className="container pt-4" style={{ padding: 0 }}>
+      <div className={classes.projectBox}>
+        <div className="col-md-12">
+          <h3 className="container mb-10 pt-2">UberEco</h3>
+          <p className="pl-4 pb-2">Words about UberEco</p>
+        </div>
+        <div className="container">
+          <div className="pb-4" />
+        </div>
       </div>
     </div>
 
-    <div className={classes.projectBox}>
-      <div className="col-md-12">
-        <h3 className="container mb-10 pt-2">Crypto-tracker</h3>
-        <p className="pl-4 pb-2">words about this project</p>
+    <div className="container pt-4" style={{ padding: 0 }}>
+      <div className={classes.projectBox}>
+        <div className="col-md-12">
+          <h3 className="container mb-10 pt-2">Crypto-tracker</h3>
+          <p className="pl-4 pb-2">Words about Crypto-tracker</p>
+        </div>
+        <div className="container">
+          <div className="pb-4" />
+        </div>
       </div>
     </div>
 
