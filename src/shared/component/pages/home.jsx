@@ -17,15 +17,15 @@ import {
 
 const styles = {
   webdevBox: {
-    height: '200px',
+    height: '120px',
     'background-color': '#41dff4',
   },
   cartBox: {
-    height: '200px',
+    height: '120px',
     'background-color': '#42f4d1',
   },
   aboutBox: {
-    height: '200px',
+    height: '120px',
     'background-color': '#41f47c',
   },
   onHover: {
@@ -36,6 +36,13 @@ const styles = {
   links: {
     color: '#000000 !important',
     'text-decoration': 'none !important',
+  },
+  selfIcon: {
+    height: '140px',
+    width: '140px',
+    'background-color': 'black',
+    'margin-bottom': '30px',
+    'margin-left': '16px',
   },
 }
 
@@ -58,7 +65,15 @@ const HomePage = ({ classes }: { classes: Object }) =>
 
     <div className="container">
       <div className="row">
-        <h3 className="mb-4 ml-2"> Hey there! </h3>
+        <div className={classes.selfIcon} />
+        <div className="pt-3 pl-4">
+          <h3>Hey there!</h3>
+          <p className="pt-2">My name is Caroline and I am a web
+            developer and cartographer.</p>
+          <p> Check out the links below to see some
+            of my work and to learn a bit more about me.</p>
+        </div>
+
       </div>
     </div>
 
@@ -69,7 +84,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
           <Link to={WEB_DEV_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
             <div className={classes.onHover}>
               <div className={classes.webdevBox}>
-                <h3 className="pl-4 pt-3">Web Apps</h3>
+                <h3 className="pl-4 pt-3">Web Applications</h3>
               </div>
             </div>
           </Link>
@@ -89,7 +104,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
           <Link to={ABOUT_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
             <div className={classes.onHover}>
               <div className={classes.aboutBox}>
-                <h3 className="pl-4 pt-3">About meta</h3>
+                <h3 className="pl-4 pt-3">About Me</h3>
               </div>
             </div>
           </Link>

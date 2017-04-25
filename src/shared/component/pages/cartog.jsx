@@ -3,10 +3,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 // import Images from '../../../../public/assets/images'
-import { HOME_PAGE_ROUTE } from '../../routes'
+// import { HOME_PAGE_ROUTE } from '../../routes'
 
 const title = 'Maps and GIS Projects'
 
@@ -15,6 +15,9 @@ const styles = {
     '&:hover': {
       opacity: '0.4',
     },
+  },
+  title: {
+    'font-size': '24px',
   },
   homeLink: {
     'text-decoration': 'none !important',
@@ -41,15 +44,14 @@ const CartogPage = ({ classes }: { classes: Object }) =>
 
     <div className="row">
       <div className="col-12">
-        <h1>{title}</h1>
+        <h1 className={classes.title}>{title}</h1>
       </div>
     </div>
 
     <div className={classes.mainBox}>
       <div className="col-md-12">
         <p className="pl-4 pt-2"> Words about maps and GIS</p>
-        <p className="pl-4"> yet more words </p>
-        <p className="pl-4 pb-2"> even more and more words</p>
+        <p className="pl-4 pb-2"> yet more words </p>
       </div>
     </div>
 
@@ -89,11 +91,6 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
 
-    <div className="col-md-1 pt-4">
-      <div className={classes.onHover}>
-        <Link to={HOME_PAGE_ROUTE} className={classes.homeLink}>Home</Link>
-      </div>
-    </div>
   </div>
 
 export default injectSheet(styles)(CartogPage)

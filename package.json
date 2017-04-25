@@ -44,6 +44,7 @@
     "express": "^4.15.2",
     "flow-bin": "^0.42.0",
     "husky": "^0.13.3",
+    "instafeed.js": "^1.4.1",
     "jest": "^19.0.2",
     "jquery": "^3.2.1",
     "nodemon": "^1.11.0",
