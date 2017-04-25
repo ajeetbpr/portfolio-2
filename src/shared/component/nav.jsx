@@ -37,6 +37,9 @@ const NavBar = () =>
           </li>
         ))}
       </ul>
+      <span className="navbar-text" style={{ color: 'white', paddingTop: '9px' }}>
+        shea.caroline92@gmail.com
+      </span>
     </div>
 
   </nav>

@@ -54,6 +54,8 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       <div className="col-md-12">
         <p className="pl-4 pt-2"> Words about maps and GIS</p>
         <p className="pl-4 pb-2"> yet more words </p>
+        <p className="pl-4 pb-2"> so many words </p>
+        <p className="pl-4 pb-2"> so many words </p>
       </div>
     </div>
 
