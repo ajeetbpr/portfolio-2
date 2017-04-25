@@ -3,16 +3,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 // import Images from '../../../../public/assets/images'
-import { HOME_PAGE_ROUTE } from '../../routes'
+// import { HOME_PAGE_ROUTE } from '../../routes'
 
 const title = 'Web Applications'
 
 const styles = {
   fontfamily: {
 
+  },
+  title: {
+    'font-size': '24px',
   },
   onHover: {
     '&:hover': {
@@ -32,19 +35,18 @@ const styles = {
 
 const WebDevPage = ({ classes }: { classes: Object }) =>
   <div className="container mt-4">
-    <Helmet title={title} />
+    <Helmet className={classes.title} title={title} />
 
     <div className="row">
       <div className="col-12">
-        <h1>{title}</h1>
+        <h1 className={classes.title}>{title}</h1>
       </div>
     </div>
 
     <div className={classes.mainBox}>
       <div className="col-md-12">
         <p className="pl-4 pt-2"> words about web development </p>
-        <p className="pl-4"> so many words </p>
-        <p className="pl-4 pb-2"> more words </p>
+        <p className="pl-4 pb-2"> so many words </p>
       </div>
     </div>
 
@@ -84,11 +86,6 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
 
-    <div className="col-md-1 pt-4">
-      <div className={classes.onHover}>
-        <Link to={HOME_PAGE_ROUTE} className={classes.homeLink}>Home</Link>
-      </div>
-    </div>
   </div>
 
 export default injectSheet(styles)(WebDevPage)

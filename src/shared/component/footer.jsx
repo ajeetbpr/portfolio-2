@@ -1,14 +1,21 @@
 // @flow
 
 import React from 'react'
+import injectSheet from 'react-jss'
 // import { APP_NAME } from '../config'
 
-const Footer = () =>
+const styles = {
+  tagline: {
+    'font-size': '12px',
+  },
+}
+
+const Footer = ({ classes }: { classes: Object }) =>
   <div className="container mt-5">
     <hr />
-    <footer>
+    <footer className={classes.tagline}>
       <p>© Caroline Shea 2017</p>
     </footer>
   </div>
 
-export default Footer
+export default injectSheet(styles)(Footer)

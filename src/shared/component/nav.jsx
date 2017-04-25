@@ -28,7 +28,7 @@ const NavBar = () =>
       <ul className="navbar-nav mr-auto">
         {[
           { route: HOME_PAGE_ROUTE, label: 'Home' },
-          { route: WEB_DEV_ROUTE, label: 'Web Dev' },
+          { route: WEB_DEV_ROUTE, label: 'Web Apps' },
           { route: CARTOG_ROUTE, label: 'Cartography' },
           { route: ABOUT_ROUTE, label: 'About Me' },
         ].map(link => (
