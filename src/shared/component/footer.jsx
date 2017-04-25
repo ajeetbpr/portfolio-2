@@ -11,10 +11,10 @@ const styles = {
 }
 
 const Footer = ({ classes }: { classes: Object }) =>
-  <div className="container mt-5">
+  <div className="container mt-5" style={{ backgroundColor: '#f4f7f9' }}>
     <hr />
     <footer className={classes.tagline}>
-      <p>© Caroline Shea 2017</p>
+      <p style={{ paddingBottom: '10px', margin: 0 }}>© Caroline Shea 2017</p>
     </footer>
   </div>
 
