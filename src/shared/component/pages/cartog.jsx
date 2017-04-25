@@ -24,9 +24,11 @@ const styles = {
   },
   mainBox: {
     'background-color': '#42f4d1',
+    'box-shadow': '1px 1px 1px 1px gray',
   },
   projectBox: {
     'background-color': '#35c6a9',
+    'box-shadow': '1px 1px 1px 1px gray',
   },
   imageBox: {
   },

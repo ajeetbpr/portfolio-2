@@ -27,9 +27,11 @@ const styles = {
   },
   mainBox: {
     'background-color': '#41dff4',
+    'box-shadow': '1px 1px 1px 1px gray',
   },
   projectBox: {
     'background-color': '#35b5c6',
+    'box-shadow': '1px 1px 1px 1px gray',
   },
 }
 

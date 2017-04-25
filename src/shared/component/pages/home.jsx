@@ -16,33 +16,47 @@ import {
 } from '../../routes'
 
 const styles = {
-  webdevBox: {
-    height: '120px',
-    'background-color': '#41dff4',
+  goldenGate: {
+    height: '280px',
+    width: '100%',
   },
-  cartBox: {
-    height: '120px',
-    'background-color': '#42f4d1',
+  banner: {
+    'padding-top': '0px',
+    'margin-bottom': '10px',
   },
-  aboutBox: {
-    height: '120px',
-    'background-color': '#41f47c',
+  outerBox: {
+    position: 'relative',
+    overflow: 'hidden',
+    height: '260px',
+    'box-shadow': '1px 1px 1px 1px gray',
+    'margin-right': '10px',
+  },
+  webImage: {
+    float: 'right',
+  },
+  cartImage: {
+    float: 'left',
+  },
+  aboutImage: {
+    float: 'right',
   },
   onHover: {
     '&:hover': {
-      opacity: '.6',
+      opacity: '0.5',
     },
   },
   links: {
     color: '#000000 !important',
     'text-decoration': 'none !important',
   },
-  selfIcon: {
-    height: '140px',
-    width: '140px',
-    'background-color': 'black',
-    'margin-bottom': '30px',
-    'margin-left': '16px',
+  heading: {
+    'text-align': 'left',
+    margin: '0 auto',
+  },
+  headingBar: {
+    'margin-right': '10px',
+    padding: '16px',
+    'box-shadow': '1px 1px 1px 1px gray',
   },
 }
 
@@ -52,63 +66,71 @@ const handleNavLinkClick = () => {
 }
 
 const HomePage = ({ classes }: { classes: Object }) =>
-  <div>
+  <div className={classes.wholePage}>
     <Helmet
       meta={[
         { name: 'description', content: "Caroline's Portfolio Website" },
         { property: 'og:title', content: APP_NAME },
       ]}
     />
-    <div className="jumbotron" style={{ padding: 0 }}>
-      <img src={Images.golden_gate_bridge} alt="asdf" />
+    <div className="jumbotron" style={{ padding: 0, marginBottom: '20px', boxShadow: '1px 1px 1px 1px gray' }}>
+      <img className={classes.goldenGate} src={Images.golden_gate_bridge} alt="asdf" />
     </div>
 
     <div className="container">
       <div className="row">
-        <div className={classes.selfIcon} />
-        <div className="pt-3 pl-4">
-          <h3>Hey there!</h3>
-          <p className="pt-2">My name is Caroline and I am a web
-            developer and cartographer.</p>
-          <p> Check out the links below to see some
-            of my work and to learn a bit more about me.</p>
+        <div className="col-md-12" style={{ padding: 0 }}>
+          <div className={classes.banner}> <h5>Welcome to my portfolio,
+            have a look around!</h5></div>
         </div>
-
       </div>
     </div>
 
     <div className="container">
       <div className="row">
 
-        <div className="col-md-4">
+        <div className="col-md-4" style={{ padding: 0 }}>
           <Link to={WEB_DEV_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
+
             <div className={classes.onHover}>
-              <div className={classes.webdevBox}>
-                <h3 className="pl-4 pt-3">Web Applications</h3>
+              <div className={classes.outerBox}>
+                <img className={classes.webImage} src={Images.sh_user} alt="oops" />
               </div>
+            </div>
+            <div className={classes.headingBar} style={{ backgroundColor: '#41dff4' }}>
+              <h5 className={classes.heading}> Web Apps </h5>
             </div>
           </Link>
         </div>
 
-        <div className="col-md-4">
+        <div className="col-md-4" style={{ padding: 0 }}>
           <Link to={CARTOG_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
+
             <div className={classes.onHover}>
-              <div className={classes.cartBox}>
-                <h3 className="pl-4 pt-3">Cartography</h3>
+              <div className={classes.outerBox}>
+                <img className={classes.cartImage} src={Images.hca_map} alt="oops" />
               </div>
+            </div>
+            <div className={classes.headingBar} style={{ backgroundColor: '#42f4d1' }}>
+              <h5 className={classes.heading}> Maps & GIS </h5>
             </div>
           </Link>
         </div>
 
-        <div className="col-md-4">
+        <div className="col-md-4" style={{ padding: 0 }}>
           <Link to={ABOUT_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
+
             <div className={classes.onHover}>
-              <div className={classes.aboutBox}>
-                <h3 className="pl-4 pt-3">About Me</h3>
+              <div className={classes.outerBox}>
+                <img className={classes.aboutImage} src={Images.ragbrai} alt="oops" />
               </div>
+            </div>
+            <div className={classes.headingBar} style={{ backgroundColor: '#83efa7' }}>
+              <h5 className={classes.heading}> About Me </h5>
             </div>
           </Link>
         </div>
+
       </div>
     </div>
   </div>
