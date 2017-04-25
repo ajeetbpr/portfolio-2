@@ -32,7 +32,7 @@ const styles = {
     'margin-right': '10px',
   },
   webImage: {
-    float: 'right',
+    float: 'left',
   },
   cartImage: {
     float: 'left',
@@ -94,7 +94,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
 
             <div className={classes.onHover}>
               <div className={classes.outerBox}>
-                <img className={classes.webImage} src={Images.sh_user} alt="oops" />
+                <img className={classes.webImage} src={Images.code_shot} alt="oops" />
               </div>
             </div>
             <div className={classes.headingBar} style={{ backgroundColor: '#41dff4' }}>
@@ -125,7 +125,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
                 <img className={classes.aboutImage} src={Images.ragbrai} alt="oops" />
               </div>
             </div>
-            <div className={classes.headingBar} style={{ backgroundColor: '#83efa7' }}>
+            <div className={classes.headingBar} style={{ backgroundColor: '#70f481' }}>
               <h5 className={classes.heading}> About Me </h5>
             </div>
           </Link>

@@ -14,6 +14,7 @@ const images = {
   github: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/github-01.png',
   instagram: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/instagram-01.png',
   linkedin: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/linkedin-01.png',
+  code_shot: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/codescreenshot.png',
 }
 
 export default images

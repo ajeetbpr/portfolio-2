@@ -49,6 +49,8 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
       <div className="col-md-12">
         <p className="pl-4 pt-2"> words about web development </p>
         <p className="pl-4 pb-2"> so many words </p>
+        <p className="pl-4 pb-2"> so many words </p>
+        <p className="pl-4 pb-2"> so many words </p>
       </div>
     </div>
 
