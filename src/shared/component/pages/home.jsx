@@ -16,26 +16,20 @@ import {
 } from '../../routes'
 
 const styles = {
-  wholePage: {
-  },
   goldenGate: {
-    height: '260px',
+    height: '280px',
     width: '100%',
   },
-  selfBox: {
-    height: '160px',
-    overflow: 'hidden',
-    'border-radius': '140px',
-    'margin-bottom': '20px',
-  },
-  selfIcon: {
-    height: '280px',
-    'padding-bottom': '100px',
+  banner: {
+    'padding-top': '0px',
+    'margin-bottom': '10px',
   },
   outerBox: {
     position: 'relative',
     overflow: 'hidden',
     height: '260px',
+    'box-shadow': '1px 1px 1px 1px gray',
+    'margin-right': '10px',
   },
   webImage: {
     float: 'right',
@@ -46,13 +40,6 @@ const styles = {
   aboutImage: {
     float: 'right',
   },
-  descriptionOverlay: {
-    position: 'absolute',
-    top: '20%',
-    left: '72%',
-    transform: 'translate(-50%,-50%)',
-    'text-align': 'center',
-  },
   onHover: {
     '&:hover': {
       opacity: '0.5',
@@ -62,8 +49,14 @@ const styles = {
     color: '#000000 !important',
     'text-decoration': 'none !important',
   },
-  description: {
-    display: 'none',
+  heading: {
+    'text-align': 'left',
+    margin: '0 auto',
+  },
+  headingBar: {
+    'margin-right': '10px',
+    padding: '16px',
+    'box-shadow': '1px 1px 1px 1px gray',
   },
 }
 
@@ -80,23 +73,16 @@ const HomePage = ({ classes }: { classes: Object }) =>
         { property: 'og:title', content: APP_NAME },
       ]}
     />
-    <div className="jumbotron" style={{ padding: 0 }}>
+    <div className="jumbotron" style={{ padding: 0, marginBottom: '20px', boxShadow: '1px 1px 1px 1px gray' }}>
       <img className={classes.goldenGate} src={Images.golden_gate_bridge} alt="asdf" />
     </div>
 
     <div className="container">
       <div className="row">
-        <div className={classes.selfBox}>
-          <img className={classes.selfIcon} src={Images.museum_selfie} alt="asdf" />
+        <div className="col-md-12" style={{ padding: 0 }}>
+          <div className={classes.banner}> <h5>Welcome to my portfolio,
+            have a look around!</h5></div>
         </div>
-        <div className="pt-3 pl-4">
-          <h3>Hey there!</h3>
-          <p className="pt-2">My name is Caroline and I am a web
-            developer and cartographer.</p>
-          <p> Check out the links below to see some
-            of my work and to learn a bit more about me.</p>
-        </div>
-
       </div>
     </div>
 
@@ -105,39 +91,42 @@ const HomePage = ({ classes }: { classes: Object }) =>
 
         <div className="col-md-4" style={{ padding: 0 }}>
           <Link to={WEB_DEV_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
-            <div className={classes.onHover}>
 
+            <div className={classes.onHover}>
               <div className={classes.outerBox}>
                 <img className={classes.webImage} src={Images.sh_user} alt="oops" />
-                <div className={classes.descriptionOverlay} />
               </div>
-
+            </div>
+            <div className={classes.headingBar} style={{ backgroundColor: '#41dff4' }}>
+              <h5 className={classes.heading}> Web Apps </h5>
             </div>
           </Link>
         </div>
 
         <div className="col-md-4" style={{ padding: 0 }}>
           <Link to={CARTOG_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
-            <div className={classes.onHover}>
 
+            <div className={classes.onHover}>
               <div className={classes.outerBox}>
                 <img className={classes.cartImage} src={Images.hca_map} alt="oops" />
-                <div className={classes.descriptionOverlay} />
               </div>
-
+            </div>
+            <div className={classes.headingBar} style={{ backgroundColor: '#42f4d1' }}>
+              <h5 className={classes.heading}> Maps & GIS </h5>
             </div>
           </Link>
         </div>
 
         <div className="col-md-4" style={{ padding: 0 }}>
           <Link to={ABOUT_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
-            <div className={classes.onHover}>
 
+            <div className={classes.onHover}>
               <div className={classes.outerBox}>
                 <img className={classes.aboutImage} src={Images.ragbrai} alt="oops" />
-                <div className={classes.descriptionOverlay} />
               </div>
-
+            </div>
+            <div className={classes.headingBar} style={{ backgroundColor: '#83efa7' }}>
+              <h5 className={classes.heading}> About Me </h5>
             </div>
           </Link>
         </div>

@@ -29,7 +29,7 @@ const NavBar = () =>
         {[
           { route: HOME_PAGE_ROUTE, label: 'Home' },
           { route: WEB_DEV_ROUTE, label: 'Web Apps' },
-          { route: CARTOG_ROUTE, label: 'Cartography' },
+          { route: CARTOG_ROUTE, label: 'Maps & GIS' },
           { route: ABOUT_ROUTE, label: 'About Me' },
         ].map(link => (
           <li className="nav-item" key={link.route}>
@@ -38,6 +38,7 @@ const NavBar = () =>
         ))}
       </ul>
     </div>
+
   </nav>
 
 export default NavBar

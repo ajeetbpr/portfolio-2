@@ -10,6 +10,10 @@ const images = {
   hca_map: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/CarolineSheaFinalProject572.png',
   sh_landing: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/SH-landing.png',
   sh_user: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/SH-user-page.png',
+  twitter: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/twitter-01.png',
+  github: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/github-01.png',
+  instagram: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/instagram-01.png',
+  linkedin: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/linkedin-01.png',
 }
 
 export default images
