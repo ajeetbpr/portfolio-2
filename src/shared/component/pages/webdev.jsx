@@ -6,9 +6,9 @@ import injectSheet from 'react-jss'
 // import { Link } from 'react-router-dom'
 
 // import Images from '../../../../public/assets/images'
-// import { HOME_PAGE_ROUTE } from '../../routes'
+// import { HOME_PAGE_ROUTE } from '../../routes' #35b5c6
 
-const title = 'Web Applications'
+const title = 'Web and Mobile Applications'
 
 const styles = {
   fontfamily: {
@@ -25,13 +25,9 @@ const styles = {
   homeLink: {
     'text-decoration': 'none !important',
   },
-  mainBox: {
-    'background-color': '#41dff4',
-    'box-shadow': '1px 1px 1px 1px gray',
-  },
   projectBox: {
-    'background-color': '#35b5c6',
-    'box-shadow': '1px 1px 1px 1px gray',
+    'background-color': 'white',
+    'box-shadow': '1px 1px 1px 1px #35b5c6',
   },
 }
 
@@ -45,20 +41,34 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
 
-    <div className={classes.mainBox}>
+    <div>
       <div className="col-md-12">
-        <p className="pl-4 pt-2"> words about web development </p>
-        <p className="pl-4 pb-2"> so many words </p>
-        <p className="pl-4 pb-2"> so many words </p>
-        <p className="pl-4 pb-2"> so many words </p>
+        <p className="pl-4 pb-2"> 
+        I started making websites during my senior year at the <b>University of Wisconsin - Madison</b>.
+        I took classes in <b>Java</b> and <b>Python</b> during undergrad and learned the fundamentals
+        of computer science, data structures, and algorthms. 
+        I fell down the rabbit hole of web development and continued to work with <b>Javascript</b>
+        &nbsp;and experiment with new technologies.
+        Last fall I moved to <b>San Francisco</b> to attend a software engineering
+        program where I collaborated with classmates to make some really neat apps!
+        </p>
+
       </div>
     </div>
 
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
-        <div className="col-md-12">
-          <h3 className="container mb-10 pt-2">SkilletHub</h3>
-          <p className="pl-4 pb-2">Words about SkilletHub</p>
+        <div className="row">
+          <div className="col-md-8">
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>SkilletHub</h5>
+            <p className="pl-4 pb-2">Description:</p>
+            <p className="pl-4 pb-2">Technologies:</p>
+            <p className="pl-4 pb-2">Responsibilites:</p>
+            <p className="pl-4 pb-2">Favorite Part:</p>
+          </div>
+          <div className="col-md-4" style={{ border: "1px solid black" }}>
+            <p>Pics</p>
+          </div>
         </div>
         <div className="container">
           <div className="pb-4" />
@@ -68,9 +78,17 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
 
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
-        <div className="col-md-12">
-          <h3 className="container mb-10 pt-2">UberEco</h3>
-          <p className="pl-4 pb-2">Words about UberEco</p>
+        <div className="row">
+          <div className="col-md-8">
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>UberEco</h5>
+            <p className="pl-4 pb-2">Description:</p>
+            <p className="pl-4 pb-2">Technologies:</p>
+            <p className="pl-4 pb-2">Responsibilites:</p>
+            <p className="pl-4 pb-2">Favorite Part:</p>
+          </div>
+          <div className="col-md-4" style={{ border: "1px solid black" }}>
+            <p>Pics</p>
+          </div>
         </div>
         <div className="container">
           <div className="pb-4" />
@@ -80,9 +98,17 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
 
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
-        <div className="col-md-12">
-          <h3 className="container mb-10 pt-2">Crypto-tracker</h3>
-          <p className="pl-4 pb-2">Words about Crypto-tracker</p>
+        <div className="row">
+          <div className="col-md-8">
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Crypto-tracker</h5>
+            <p className="pl-4 pb-2">Description:</p>
+            <p className="pl-4 pb-2">Technologies:</p>
+            <p className="pl-4 pb-2">Responsibilites:</p>
+            <p className="pl-4 pb-2">Favorite Part:</p>
+          </div>
+          <div className="col-md-4" style={{ border: "1px solid black" }}>
+            <p>Pics</p>
+          </div>
         </div>
         <div className="container">
           <div className="pb-4" />

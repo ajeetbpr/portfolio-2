@@ -27,7 +27,6 @@ const NavBar = () =>
     <div className="js-navbar-collapse collapse navbar-collapse">
       <ul className="navbar-nav mr-auto">
         {[
-          { route: HOME_PAGE_ROUTE, label: 'Home' },
           { route: WEB_DEV_ROUTE, label: 'Web Apps' },
           { route: CARTOG_ROUTE, label: 'Maps & GIS' },
           { route: ABOUT_ROUTE, label: 'About Me' },

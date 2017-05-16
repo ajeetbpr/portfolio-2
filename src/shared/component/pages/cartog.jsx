@@ -22,13 +22,9 @@ const styles = {
   homeLink: {
     'text-decoration': 'none !important',
   },
-  mainBox: {
-    'background-color': '#42f4d1',
-    'box-shadow': '1px 1px 1px 1px gray',
-  },
   projectBox: {
-    'background-color': '#35c6a9',
-    'box-shadow': '1px 1px 1px 1px gray',
+    'background-color': 'white',
+    'box-shadow': '1px 1px 1px 1px #35c6a9',
   },
   imageBox: {
   },
@@ -50,21 +46,29 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
 
-    <div className={classes.mainBox}>
+    <div>
       <div className="col-md-12">
-        <p className="pl-4 pt-2"> Words about maps and GIS</p>
-        <p className="pl-4 pb-2"> yet more words </p>
-        <p className="pl-4 pb-2"> so many words </p>
-        <p className="pl-4 pb-2"> so many words </p>
+        <p className="pl-4 pb-2"> 
+        
+        </p>
       </div>
     </div>
 
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
-        <div className="col-md-12">
-          <h3 className="container mb-10 pt-2">Senior Thesis: Madison Parks</h3>
-          <p className="pl-4 pb-2">Research on the connection between socioeconomic status and access to quality public parks</p>
+        <div className="row">
+          <div className="col-md-8">
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Senior Thesis: Madison Parks</h5>
+            <p className="pl-4 pb-2">Description: Research on the connection between socioeconomic status and access to quality public parks</p>
+            <p className="pl-4 pb-2">Technologies:</p>
+            <p className="pl-4 pb-2">Responsibilites:</p>
+            <p className="pl-4 pb-2">Favorite Part:</p>
+          </div>
+          <div className="col-md-4" style={{ border: "1px solid black" }}>
+            <p>Pics</p>
+          </div>
         </div>
+
         <div className="container">
           <div className="pb-4" />
         </div>
@@ -73,10 +77,19 @@ const CartogPage = ({ classes }: { classes: Object }) =>
 
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
-        <div className="col-md-12">
-          <h3 className="container mb-10 pt-2">Cartographic Design: HCA Travels Map</h3>
-          <p className="pl-4 pb-2">For advanced cartographic design class, vintage inspired map of HCA travels</p>
+        <div className="row">
+          <div className="col-md-8">
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Cartographic Design: HCA Travels Map</h5>
+            <p className="pl-4 pb-2">For advanced cartographic design class, vintage inspired map of HCA travels</p>
+            <p className="pl-4 pb-2">Technologies:</p>
+            <p className="pl-4 pb-2">Responsibilites:</p>
+            <p className="pl-4 pb-2">Favorite Part:</p>
+          </div>
+          <div className="col-md-4" style={{ border: "1px solid black" }}>
+            <p>Pics</p>
+          </div>
         </div>
+
         <div className="container">
           <div className="pb-4" />
         </div>
@@ -85,10 +98,20 @@ const CartogPage = ({ classes }: { classes: Object }) =>
 
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
-        <div className="col-md-12">
-          <h3 className="container mb-10 pt-2">Advanced GIS Application: Off-Campus Housing</h3>
-          <p className="pl-4 pb-2">Case study on the effect new high-rise apartment buildings have on affordability of off-campus housing</p>
+
+        <div className="row">
+          <div className="col-md-8">
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Advanced GIS Application: Off-Campus Housing</h5>
+            <p className="pl-4 pb-2">Case study on the effect new high-rise apartment buildings have on affordability of off-campus housing</p>
+            <p className="pl-4 pb-2">Technologies:</p>
+            <p className="pl-4 pb-2">Responsibilites:</p>
+            <p className="pl-4 pb-2">Favorite Part:</p>
+          </div>
+          <div className="col-md-4" style={{ border: "1px solid black" }}>
+            <p>Pics</p>
+          </div>
         </div>
+
         <div className="container">
           <div className="pb-4" />
         </div>
