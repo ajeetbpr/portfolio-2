@@ -71,7 +71,7 @@ const styles = {
     'margin-right': '10px',
     padding: '16px',
     'box-shadow': '1px 1px 1px 1px gray',
-  }
+  },
 }
 
 const handleNavLinkClick = () => {
@@ -91,37 +91,38 @@ const HomePage = ({ classes }: { classes: Object }) =>
       <img className={classes.goldenGate} src={Images.golden_gate_bridge} alt="asdf" />
     </div>
 
-    <div className="container" style={{ paddingBottom: "20px"}}>
+    <div className="container" style={{ paddingBottom: 20 }}>
       <div className="row">
 
         <div className="col-md-8" style={{ height: 140 }}>
-          <div className={classes.banner} style={{ paddingTop: 10 }}> 
-          <h4>Hey there!</h4> 
-          <p>I'm <b>Caroline Shea</b>&nbsp;and I am a <b>website and application developer</b>. 
-          I'm looking for my next career opportunity and would like to put my skills to work for you.
-          Look around my porfolio to get a better idea of who I am, my skillset, and my accomplishments. 
-          Feel free to email me at <b>shea.caroline92@gmail.com</b>.</p>
+          <div className={classes.banner} style={{ paddingTop: 10 }}>
+            <h4>Hey there!</h4>
+            <p>I am <b>Caroline Shea</b>&nbsp;and I am a <b>website and application developer</b>.
+            I am looking for my next career opportunity and would like to put my
+            skills to work for you. Look around my porfolio to get a better idea of who I am,
+            my skillset, and my accomplishments.
+            Feel free to email me at <b>shea.caroline92@gmail.com</b>.</p>
           </div>
         </div>
 
-        <div className="col-md-4" style={{paddingLeft: 26, paddingTop: 30}}>
+        <div className="col-md-4" style={{ paddingLeft: 26, paddingTop: 30 }}>
           <div className="row">
-            <div style={{ padding: 6}}>
+            <div style={{ padding: 6 }}>
               <a href="https://www.linkedin.com/in/caroline-shea/" target="_blank" rel="noopener noreferrer">
                 <img className={classes.social} src={Images.linkedin} alt="linkedin" />
               </a>
             </div>
-            <div style={{ padding: 6}}>
+            <div style={{ padding: 6 }}>
               <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">
                 <img className={classes.social} src={Images.github} alt="github" />
               </a>
             </div>
-            <div style={{ padding: 6}}>
+            <div style={{ padding: 6 }}>
               <a href="https://www.instagram.com/shea.caroline/" target="_blank" rel="noopener noreferrer">
                 <img className={classes.social} src={Images.instagram} alt="instagram" />
               </a>
             </div>
-            <div style={{ padding: 6}}>
+            <div style={{ padding: 6 }}>
               <a href="https://twitter.com/callmegarol" target="_blank" rel="noopener noreferrer">
                 <img className={classes.social} src={Images.twitter} alt="twitter" />
               </a>
@@ -132,7 +133,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
 
-    <div className="container"  style={{  margin: '0 auto' }}>
+    <div className="container" style={{ margin: '0 auto' }}>
       <div className="row">
 
         <div className="col-md-4" style={{ padding: 0, margin: '0 auto' }}>
@@ -149,7 +150,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
           </Link>
         </div>
 
-        <div className="col-md-4" style={{ padding: 0, margin: '0 auto'  }}>
+        <div className="col-md-4" style={{ padding: 0, margin: '0 auto' }}>
           <Link to={CARTOG_ROUTE} onClick={handleNavLinkClick} className={classes.links}>
 
             <div className={classes.onHover}>

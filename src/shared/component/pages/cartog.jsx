@@ -48,9 +48,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
 
     <div>
       <div className="col-md-12">
-        <p className="pl-4 pb-2"> 
-        
-        </p>
+        <p className="pl-4 pb-2" />
       </div>
     </div>
 
@@ -64,7 +62,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
             <p className="pl-4 pb-2">Responsibilites:</p>
             <p className="pl-4 pb-2">Favorite Part:</p>
           </div>
-          <div className="col-md-4" style={{ border: "1px solid black" }}>
+          <div className="col-md-4">
             <p>Pics</p>
           </div>
         </div>
@@ -85,7 +83,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
             <p className="pl-4 pb-2">Responsibilites:</p>
             <p className="pl-4 pb-2">Favorite Part:</p>
           </div>
-          <div className="col-md-4" style={{ border: "1px solid black" }}>
+          <div className="col-md-4">
             <p>Pics</p>
           </div>
         </div>
@@ -107,7 +105,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
             <p className="pl-4 pb-2">Responsibilites:</p>
             <p className="pl-4 pb-2">Favorite Part:</p>
           </div>
-          <div className="col-md-4" style={{ border: "1px solid black" }}>
+          <div className="col-md-4">
             <p>Pics</p>
           </div>
         </div>
