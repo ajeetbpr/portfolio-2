@@ -94,7 +94,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
     <div className="container" style={{ paddingBottom: 20 }}>
       <div className="row">
 
-        <div className="col-md-2" style={{ border: "1px solid black"}}>
+        <div className="col-md-2" style={{ border: '1px solid black' }}>
           <p> Lil Pic of Me </p>
         </div>
 
