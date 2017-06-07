@@ -27,7 +27,7 @@ const styles = {
   outerBox: {
     position: 'relative',
     overflow: 'hidden',
-    height: '260px',
+    height: '200px',
     'box-shadow': '1px 1px 1px 1px gray',
     'margin-right': '10px',
   },
@@ -94,14 +94,17 @@ const HomePage = ({ classes }: { classes: Object }) =>
     <div className="container" style={{ paddingBottom: 20 }}>
       <div className="row">
 
-        <div className="col-md-8" style={{ height: 140 }}>
+        <div className="col-md-2" style={{ border: "1px solid black"}}>
+          <p> Lil Pic of Me </p>
+        </div>
+
+        <div className="col-md-6" style={{ height: 140 }}>
           <div className={classes.banner} style={{ paddingTop: 10 }}>
             <h4>Hey there!</h4>
             <p>I am <b>Caroline Shea</b>&nbsp;and I am a <b>website and application developer</b>.
             I am looking for my next career opportunity and would like to put my
-            skills to work for you. Look around my porfolio to get a better idea of who I am,
-            my skillset, and my accomplishments.
-            Feel free to email me at <b>shea.caroline92@gmail.com</b>.</p>
+            skills to work for you. Look around my porfolio to get a better idea of me,
+            my skillset, and my accomplishments.</p>
           </div>
         </div>
 
