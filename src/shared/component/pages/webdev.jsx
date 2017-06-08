@@ -42,13 +42,12 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
 
       <div className="col-md-12">
         <p className="pl-4 pb-2">
-        I started making websites during my senior year at the
-        &nbsp;<b>University of Wisconsin - Madison</b>.
+        I started making websites during my senior year at the <b>University of
+        Wisconsin - Madison</b>.
         During undergrad I took classes in <b>Java</b> and <b>Python</b> and learned
         the fundamentals of <b>computer science, data structures, and algorthms</b>.
         I soon fell down the rabbit hole of <b>web development</b> and continued
-        &nbsp;to work with <b>Javascript</b>
-        &nbsp;and experiment with new technologies.
+        to work with <b>Javascript</b> and experiment with new technologies.
         Last fall I moved to <b>San Francisco</b> to attend a software engineering
         program where I collaborated with classmates to make some <b>really neat apps</b>!
         Below I describe the three largest and <b>most challenging projects</b> I have worked on.
@@ -69,13 +68,13 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
             </h5>
             <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
               SkilletHub is a version control system interface, like GitHub,
-              but for recipes. Our app allows users to <b>create, share,
+              but for recipes. SkilletHub users can <b>create, share,
               edit and iteratively develop open source recipes</b>.
               I worked with two other developers and we used the following
               technologies to create SkilletHub:
-              Javascript, MongoDB, Express, React, Node, AWS, REST API,
+              React, MongoDB, Express, Node, AWS, RESTful API,
               CSS, Bootstrap. My key responsibilites on this project
-              were <b>front-end development</b> and creating a <b>user
+              were <b>front-end development/design</b> and creating a <b>user
               management, authentication, and session system</b>.
               Additionally, I took on the role of <b>project manager</b>
               &nbsp;and gained valuable experience leading our team.
@@ -144,7 +143,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               bitcoin transactions and exchange rates</b>.
               This was a challenge that my UberEco team and I took on as
               a legacy project. We identified some interesting
-              features to add to the existing app. On the front page,
+              features to add to the existing app. On the home page,
               we added an <b>interactive globe</b> that displays a dot on
               the map when a bitcoin transaction takes place.
               My main contribution was a <b>search component</b>

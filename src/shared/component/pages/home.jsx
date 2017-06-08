@@ -93,15 +93,10 @@ const HomePage = ({ classes }: { classes: Object }) =>
 
     <div className="container" style={{ paddingBottom: 20 }}>
       <div className="row">
-
-        <div className="col-md-2" style={{ border: '1px solid black' }}>
-          <p> Lil Pic of Me </p>
-        </div>
-
-        <div className="col-md-6" style={{ height: 140 }}>
-          <div className={classes.banner} style={{ paddingTop: 10 }}>
+        <div className="col-md-8" style={{ height: 140 }}>
+          <div className={classes.banner} style={{ paddingTop: 10, backgroundColor: 'light blue' }}>
             <h4>Hey there!</h4>
-            <p>I am <b>Caroline Shea</b>&nbsp;and I am a <b>website and application developer</b>.
+            <p>I am <b>Caroline Shea</b>&nbsp;and I am a <b>software and web developer</b>.
             I am looking for my next career opportunity and would like to put my
             skills to work for you. Look around my porfolio to get a better idea of me,
             my skillset, and my accomplishments.</p>
@@ -158,7 +153,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
 
             <div className={classes.onHover}>
               <div className={classes.outerBox}>
-                <img className={classes.cartImage} src={Images.hca_map} alt="oops" />
+                <img className={classes.cartImage} src={Images.wis_map} alt="oops" />
               </div>
             </div>
             <div className={classes.headingBar} style={{ backgroundColor: '#42f4d1' }}>

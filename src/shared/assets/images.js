@@ -15,6 +15,8 @@ const images = {
   instagram: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/instagram-01.png',
   linkedin: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/linkedin-01.png',
   code_shot: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/codescreenshot.png',
+  wis_map: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/Screen+Shot+2017-06-07+at+9.09.25+PM.png',
+  sen_thesis: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/sen_thesis.png',
 }
 
 export default images

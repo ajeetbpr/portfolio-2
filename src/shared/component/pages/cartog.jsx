@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
 // import { Link } from 'react-router-dom'
 
-// import Images from '../../../../public/assets/images'
+import Images from '../../assets/images'
 // import { HOME_PAGE_ROUTE } from '../../routes'
 
 const title = 'Maps and GIS Projects'
@@ -54,12 +54,14 @@ const CartogPage = ({ classes }: { classes: Object }) =>
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-6">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Senior Thesis: Madison Parks</h5>
-            <p className="pl-4 pb-2">Description: Studied the quality of public parks in relation to the neighborhoods they serve</p>
+            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+              Studied the quality of public parks in relation to the neighborhoods they serve
+            </p>
           </div>
-          <div className="col-md-4">
-            <p>Pics</p>
+          <div className="col-md-6" style={{ paddingTop: 20 }}>
+            <img className={classes.social} style={{ height: '100%', width: '500px' }} src={Images.sen_thesis} alt="Senior Thesis" />
           </div>
         </div>
 
@@ -72,12 +74,14 @@ const CartogPage = ({ classes }: { classes: Object }) =>
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-6">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Cartographic Design: Hans Christian Andersen</h5>
-            <p className="pl-4 pb-2">Description: For advanced cartographic design class, vintage inspired map of HCA travels</p>
+            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+              For advanced cartographic design class, vintage inspired map of HCA travels
+            </p>
           </div>
-          <div className="col-md-4">
-            <p>Pics</p>
+          <div className="col-md-6" style={{ paddingTop: 20 }}>
+            <img className={classes.social} style={{ height: '100%', width: '500px' }} src={Images.hca_map} alt="HCA Map" />
           </div>
         </div>
 
@@ -93,7 +97,10 @@ const CartogPage = ({ classes }: { classes: Object }) =>
         <div className="row">
           <div className="col-md-8">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Advanced GIS Application: Off-Campus Housing</h5>
-            <p className="pl-4 pb-2">Description: Case study on the effect new high-rise apartment buildings have on affordability of off-campus housing</p>
+            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+              Case study on the effect new high-rise apartment buildings
+              have on affordability of off-campus housing
+            </p>
           </div>
           <div className="col-md-4">
             <p>Pics</p>
