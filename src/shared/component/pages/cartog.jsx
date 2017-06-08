@@ -39,16 +39,15 @@ const styles = {
 const CartogPage = ({ classes }: { classes: Object }) =>
   <div className="container mt-4">
     <Helmet title={title} />
-
     <div className="row">
       <div className="col-12">
-        <h1 className={classes.title}>{title}</h1>
+        <h1 className={classes.title} style={{ paddingBottom: 10 }}>{title}</h1>
       </div>
-    </div>
 
-    <div>
       <div className="col-md-12">
-        <p className="pl-4 pb-2" />
+        <p className="pl-4 pb-2">
+          Words and Turds
+        </p>
       </div>
     </div>
 
@@ -57,10 +56,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
         <div className="row">
           <div className="col-md-8">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Senior Thesis: Madison Parks</h5>
-            <p className="pl-4 pb-2">Description: Research on the connection between socioeconomic status and access to quality public parks</p>
-            <p className="pl-4 pb-2">Technologies:</p>
-            <p className="pl-4 pb-2">Responsibilites:</p>
-            <p className="pl-4 pb-2">Favorite Part:</p>
+            <p className="pl-4 pb-2">Description: Studied the quality of public parks in relation to the neighborhoods they serve</p>
           </div>
           <div className="col-md-4">
             <p>Pics</p>
@@ -77,11 +73,8 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       <div className={classes.projectBox}>
         <div className="row">
           <div className="col-md-8">
-            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Cartographic Design: HCA Travels Map</h5>
-            <p className="pl-4 pb-2">For advanced cartographic design class, vintage inspired map of HCA travels</p>
-            <p className="pl-4 pb-2">Technologies:</p>
-            <p className="pl-4 pb-2">Responsibilites:</p>
-            <p className="pl-4 pb-2">Favorite Part:</p>
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Cartographic Design: Hans Christian Andersen</h5>
+            <p className="pl-4 pb-2">Description: For advanced cartographic design class, vintage inspired map of HCA travels</p>
           </div>
           <div className="col-md-4">
             <p>Pics</p>
@@ -100,10 +93,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
         <div className="row">
           <div className="col-md-8">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Advanced GIS Application: Off-Campus Housing</h5>
-            <p className="pl-4 pb-2">Case study on the effect new high-rise apartment buildings have on affordability of off-campus housing</p>
-            <p className="pl-4 pb-2">Technologies:</p>
-            <p className="pl-4 pb-2">Responsibilites:</p>
-            <p className="pl-4 pb-2">Favorite Part:</p>
+            <p className="pl-4 pb-2">Description: Case study on the effect new high-rise apartment buildings have on affordability of off-campus housing</p>
           </div>
           <div className="col-md-4">
             <p>Pics</p>
