@@ -45,7 +45,9 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       </div>
 
       <div className="col-md-12">
-        <p className="pl-4 pb-2" />
+        <p className="pl-4 pb-2">
+          Why geography, breadth and depth of coursework, teamwork, organization
+        </p>
       </div>
     </div>
 
@@ -85,7 +87,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       <div className={classes.projectBox}>
         <div className="row">
           <div className="col-md-6">
-            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>Cartographic Design: Hans Christian Andersen</h5>
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>Cartographic Design: Travels of Hans Christian Andersen</h5>
             <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
               For an advanced cartographic design course, I created a vintage
               inspired map of Danish author, Hans Christian Anderson&#39;s extensive
@@ -98,10 +100,9 @@ const CartogPage = ({ classes }: { classes: Object }) =>
             </p>
           </div>
           <div className="col-md-6" style={{ paddingTop: 20 }}>
-            <img className={classes.social} style={{ height: '100%', width: '500px' }} src={Images.hca_map} alt="HCA Map" />
+            <img style={{ height: '100%', width: '500px' }} src={Images.hca_map} alt="HCA Map" />
           </div>
         </div>
-
         <div className="container">
           <div className="pb-4" />
         </div>
@@ -112,18 +113,18 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       <div className={classes.projectBox}>
 
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-11">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>GIS Applications: Off-Campus Housing</h5>
             <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
-              Case study on the effect new high-rise apartment buildings
-              have on affordability of off-campus housing
+              Prior to my senior thesis, this project marked the culmination
+              of my geographic information systems specific coursework. This
+              included gathering raw data on new campus-adjacent apartment complexes
+              and, using ESRI ArcMap for spatial and statistical analysis, illuminating
+              the effect these new buildings had on the affordability of off-campus
+              housing.
             </p>
           </div>
-          <div className="col-md-4">
-            <p>Pics</p>
-          </div>
         </div>
-
         <div className="container">
           <div className="pb-4" />
         </div>

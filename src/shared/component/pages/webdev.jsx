@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
 // import { Link } from 'react-router-dom'
 
-// import Images from '../../../../public/assets/images'
+import Images from '../../assets/images'
 // import { HOME_PAGE_ROUTE } from '../../routes' #35b5c6
 
 const title = 'Web and Mobile Applications'
@@ -52,7 +52,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
         program where I collaborated with classmates to make some <b>really neat apps</b>!
         Below I describe the three largest and <b>most challenging projects</b> I have worked on.
         Check out <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">my GitHub</a>
-        &nbsp;to see some of my smaller personal projects and code samples.
+        &nbsp;to see some smaller personal projects and code samples.
         </p>
       </div>
     </div>
@@ -60,13 +60,13 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-11">
+          <div className="col-md-8">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>
               <a href="http://ec2-52-26-208-4.us-west-2.compute.amazonaws.com/" target="_blank" rel="noopener noreferrer">
                 SkilletHub
               </a>
             </h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               SkilletHub is a version control system interface, like GitHub,
               but for recipes. SkilletHub users can <b>create, share,
               edit and iteratively develop open source recipes</b>.
@@ -86,6 +86,12 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               into our development cycle and architecture.
             </p>
           </div>
+
+          <div className="col-md-4" style={{ paddingTop: 20 }}>
+            <img style={{ height: 'auto', width: 350 }} src={Images.sh_recipe} alt="SkilletHub" />
+            <img style={{ height: 'auto', width: 350, paddingTop: 10 }} src={Images.sh_user} alt="SkilletHub" />
+          </div>
+
         </div>
       </div>
     </div>
@@ -99,7 +105,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
                 UberEco
               </a>
             </h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               UberEco is a iOS app for <b>finding travel routes around San
               Francisco</b> using the Bay Area Bike Share
               service. The name is tongue-in-cheek but the app
@@ -134,7 +140,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
                 Crypto-tracker
               </a>
             </h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               Crypto-tracker is a web app that displays <b>real-time
               bitcoin transactions and exchange rates</b>.
               This was a challenge that my UberEco team and I took on as
