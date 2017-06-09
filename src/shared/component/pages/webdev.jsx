@@ -52,7 +52,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
         program where I collaborated with classmates to make some <b>really neat apps</b>!
         Below I describe the three largest and <b>most challenging projects</b> I have worked on.
         Check out <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">my GitHub</a>
-        &nbsp;to see some smaller personal projects and code samples.
+        &nbsp;to see some smaller projects and code samples.
         </p>
       </div>
     </div>

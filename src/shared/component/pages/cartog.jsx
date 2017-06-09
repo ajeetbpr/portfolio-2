@@ -46,7 +46,13 @@ const CartogPage = ({ classes }: { classes: Object }) =>
 
       <div className="col-md-12">
         <p className="pl-4 pb-2">
-          Why geography, breadth and depth of coursework, teamwork, organization
+          Geography is arguably one of the most interdisciplinary fields of study.
+          Throughout my undergrad education I was trained to
+          integrate a paradigm of space and place into my critical thinking
+          and problem solving skills. In pursuit of my geography degree I
+          learned the design principles that drive the map making process,
+          had the opportunity to successfully lead teams towards common goals,
+          and developed strong technical skills in GIS, geocomputing, and programming.
         </p>
       </div>
     </div>
@@ -58,10 +64,10 @@ const CartogPage = ({ classes }: { classes: Object }) =>
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>Senior Thesis: Madison Parks</h5>
             <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
               My senior thesis is the culmination of my cartography and GIS
-              coursework in geography at UW. I worked with three classmates to
+              coursework at UW. I worked with three classmates to
               combine quantitative and qualitative research methods,
               field work, interviews, data gathering, spatial analysis,
-              and map-making to deliver this exploration of the connection
+              and map-making to conduct this exploration of the connection
               between public park quality and neighborhood demographics. As the
               GIS expert on my team, my responsibilities on this project were to
               create GIS layers from our field data, gather
