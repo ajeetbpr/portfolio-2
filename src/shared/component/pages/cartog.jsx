@@ -45,23 +45,33 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       </div>
 
       <div className="col-md-12">
-        <p className="pl-4 pb-2">
-          Words and Turds
-        </p>
+        <p className="pl-4 pb-2" />
       </div>
     </div>
 
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-6">
-            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Senior Thesis: Madison Parks</h5>
+          <div className="col-md-7">
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>Senior Thesis: Madison Parks</h5>
             <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
-              Studied the quality of public parks in relation to the neighborhoods they serve
+              My senior thesis is the culmination of my cartography and GIS
+              coursework in geography at UW. I worked with three classmates to
+              combine quantitative and qualitative research methods,
+              field work, interviews, data gathering, spatial analysis,
+              and map-making to deliver this exploration of the connection
+              between public park quality and neighborhood demographics. As the
+              GIS expert on my team, my responsibilities on this project were to
+              create GIS layers from our field data, gather
+              census block level demographic and economic data, and create
+              cartograpic products that depict the relationship between the two.
+              We prepared our research in a power point presentation and had the opportunity
+              to deliver our findings to our professors and peers at the UW-Madison
+              undergraduate colloquium.
             </p>
           </div>
-          <div className="col-md-6" style={{ paddingTop: 20 }}>
-            <img className={classes.social} style={{ height: '100%', width: '500px' }} src={Images.sen_thesis} alt="Senior Thesis" />
+          <div className="col-md-4" style={{ paddingTop: 20 }}>
+            <embed src={Images.thesis_pdf} width="400px" height="300px" />
           </div>
         </div>
 
@@ -75,9 +85,16 @@ const CartogPage = ({ classes }: { classes: Object }) =>
       <div className={classes.projectBox}>
         <div className="row">
           <div className="col-md-6">
-            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Cartographic Design: Hans Christian Andersen</h5>
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>Cartographic Design: Hans Christian Andersen</h5>
             <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
-              For advanced cartographic design class, vintage inspired map of HCA travels
+              For an advanced cartographic design course, I created a vintage
+              inspired map of Danish author, Hans Christian Anderson&#39;s extensive
+              travels around Europe during the mid 1800s. In this class, I focused
+              on three aspects of static cartography: how maps are seen, how maps
+              are understood, and how maps become meaningful. Within these areas, I
+              studied visual perception, spatial cognition, color theory, semiotics,
+              and artistic epistemologies. I gained a holistic understanding of design
+              principles that inform the user interfaces and experiences I create with code.
             </p>
           </div>
           <div className="col-md-6" style={{ paddingTop: 20 }}>
@@ -96,7 +113,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
 
         <div className="row">
           <div className="col-md-8">
-            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10 }}>Advanced GIS Application: Off-Campus Housing</h5>
+            <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>GIS Applications: Off-Campus Housing</h5>
             <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
               Case study on the effect new high-rise apartment buildings
               have on affordability of off-campus housing

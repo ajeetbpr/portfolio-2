@@ -23,6 +23,8 @@ const styles = {
   banner: {
     'padding-top': '0px',
     'margin-bottom': '10px',
+    paddingTop: 10,
+    backgroundColor: 'light blue',
   },
   outerBox: {
     position: 'relative',
@@ -58,11 +60,9 @@ const styles = {
     padding: '16px',
     'box-shadow': '1px 1px 1px 1px gray',
   },
-  socialBox: {
-    'text-align': 'center',
-  },
   social: {
     height: '75px',
+    boxShadow: '1px 1px 1px 1px gray',
     '&:hover': {
       opacity: '0.5',
     },
@@ -71,6 +71,12 @@ const styles = {
     'margin-right': '10px',
     padding: '16px',
     'box-shadow': '1px 1px 1px 1px gray',
+  },
+  myface: {
+    height: '150px',
+    margin: '0 auto',
+    boxShadow: '1px 1px 1px 1px gray',
+
   },
 }
 
@@ -91,19 +97,25 @@ const HomePage = ({ classes }: { classes: Object }) =>
       <img className={classes.goldenGate} src={Images.golden_gate_bridge} alt="asdf" />
     </div>
 
-    <div className="container" style={{ paddingBottom: 20 }}>
+    <div className="container" style={{ paddingBottom: 20, marginBottom: 20 }}>
       <div className="row">
-        <div className="col-md-8" style={{ height: 140 }}>
-          <div className={classes.banner} style={{ paddingTop: 10, backgroundColor: 'light blue' }}>
+
+        <div className="col-md-2" style={{ height: 140 }}>
+          <img className={classes.myface} src={Images.wedding} alt="my face" />
+        </div>
+
+        <div className="col-md-6" style={{ height: 140 }}>
+          <div className={classes.banner}>
             <h4>Hey there!</h4>
-            <p>I am <b>Caroline Shea</b>&nbsp;and I am a <b>software and web developer</b>.
-            I am looking for my next career opportunity and would like to put my
-            skills to work for you. Look around my porfolio to get a better idea of me,
-            my skillset, and my accomplishments.</p>
+            <p>
+              My name is <b>Caroline Shea</b>&nbsp;and I&#39;m a <b>software developer</b>.
+              I am looking for my next career opportunity and would like to work for you!
+              Look around my porfolio to get to know me and my skills.
+            </p>
           </div>
         </div>
 
-        <div className="col-md-4" style={{ paddingLeft: 26, paddingTop: 30 }}>
+        <div className="col-md-3" style={{ margin: '0 auto', paddingTop: 30 }}>
           <div className="row">
             <div style={{ padding: 6 }}>
               <a href="https://www.linkedin.com/in/caroline-shea/" target="_blank" rel="noopener noreferrer">
@@ -113,11 +125,6 @@ const HomePage = ({ classes }: { classes: Object }) =>
             <div style={{ padding: 6 }}>
               <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">
                 <img className={classes.social} src={Images.github} alt="github" />
-              </a>
-            </div>
-            <div style={{ padding: 6 }}>
-              <a href="https://www.instagram.com/shea.caroline/" target="_blank" rel="noopener noreferrer">
-                <img className={classes.social} src={Images.instagram} alt="instagram" />
               </a>
             </div>
             <div style={{ padding: 6 }}>
@@ -131,7 +138,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
 
-    <div className="container" style={{ margin: '0 auto' }}>
+    <div className="container">
       <div className="row">
 
         <div className="col-md-4" style={{ padding: 0, margin: '0 auto' }}>
@@ -179,5 +186,14 @@ const HomePage = ({ classes }: { classes: Object }) =>
       </div>
     </div>
   </div>
+
+/*
+<div style={{ padding: 6 }}>
+  <a href="https://www.instagram.com/shea.caroline/" target="_blank" rel="noopener noreferrer">
+    <img className={classes.social} style={{ boxShadow: '1px 1px 1px 1px gray' }}
+    src={Images.instagram} alt="instagram" />
+  </a>
+</div>
+*/
 
 export default injectSheet(styles)(HomePage)

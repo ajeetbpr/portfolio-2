@@ -17,6 +17,9 @@ const images = {
   code_shot: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/codescreenshot.png',
   wis_map: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/Screen+Shot+2017-06-07+at+9.09.25+PM.png',
   sen_thesis: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/sen_thesis.png',
+  thesis_pdf: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/UW+Shea+Senior+Thesis.pdf',
+  italy: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/italy.png',
+  wedding: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/wedding.png',
 }
 
 export default images

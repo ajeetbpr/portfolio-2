@@ -52,7 +52,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
         program where I collaborated with classmates to make some <b>really neat apps</b>!
         Below I describe the three largest and <b>most challenging projects</b> I have worked on.
         Check out <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">my GitHub</a>
-        &nbsp;to see some of my smaller personal projects.
+        &nbsp;to see some of my smaller personal projects and code samples.
         </p>
       </div>
     </div>
@@ -60,7 +60,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-11">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>
               <a href="http://ec2-52-26-208-4.us-west-2.compute.amazonaws.com/" target="_blank" rel="noopener noreferrer">
                 SkilletHub
@@ -86,9 +86,6 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               into our development cycle and architecture.
             </p>
           </div>
-          <div className="col-md-4">
-            <p>Pictures</p>
-          </div>
         </div>
       </div>
     </div>
@@ -96,7 +93,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-11">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>
               <a href="https://github.com/Glossy-Samosa/greenfield" target="_blank" rel="noopener noreferrer">
                 UberEco
@@ -111,8 +108,10 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               and the Bay Area Bike Share API to create
               UberEco. Some features include: <b>address autofill,
               interactive maps, and turn-by-turn navigation</b>.
-              This was my first time using React Native to create
-              an iOS app. Because of my background in GIS
+              I spent time learning Xcode and Swift last year
+              but have always preferred Javascript so I was excited to
+              use React Native to create an iOS app.
+              Because of my background in GIS
               and mapping, my main responsibilites on this app were
               to <b>design the map interface</b> and <b>create a
               routing algorithm</b> that receives the
@@ -122,9 +121,6 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               some of my favorite things: <b>bikes, maps, and apps!</b>
             </p>
           </div>
-          <div className="col-md-4">
-            <p>Pictures</p>
-          </div>
         </div>
       </div>
     </div>
@@ -132,7 +128,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-11">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>
               <a href="https://github.com/Glossy-Samosa/coordinatedtortoises" target="_blank" rel="noopener noreferrer">
                 Crypto-tracker
@@ -152,9 +148,6 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               &nbsp;an external API, and <b>displaying</b> the
               results. Crypto-tracker was a challenge because... legacy code.
             </p>
-          </div>
-          <div className="col-md-4">
-            <p>Pictures</p>
           </div>
         </div>
       </div>
