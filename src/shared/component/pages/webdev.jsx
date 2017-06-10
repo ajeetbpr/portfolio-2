@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
 // import { Link } from 'react-router-dom'
 
-// import Images from '../../../../public/assets/images'
+import Images from '../../assets/images'
 // import { HOME_PAGE_ROUTE } from '../../routes' #35b5c6
 
 const title = 'Web and Mobile Applications'
@@ -42,18 +42,17 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
 
       <div className="col-md-12">
         <p className="pl-4 pb-2">
-        I started making websites during my senior year at the
-        &nbsp;<b>University of Wisconsin - Madison</b>.
+        I started making websites during my senior year at the <b>University of
+        Wisconsin - Madison</b>.
         During undergrad I took classes in <b>Java</b> and <b>Python</b> and learned
         the fundamentals of <b>computer science, data structures, and algorthms</b>.
         I soon fell down the rabbit hole of <b>web development</b> and continued
-        &nbsp;to work with <b>Javascript</b>
-        &nbsp;and experiment with new technologies.
+        to work with <b>Javascript</b> and experiment with new technologies.
         Last fall I moved to <b>San Francisco</b> to attend a software engineering
         program where I collaborated with classmates to make some <b>really neat apps</b>!
         Below I describe the three largest and <b>most challenging projects</b> I have worked on.
         Check out <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">my GitHub</a>
-        &nbsp;to see some of my smaller personal projects.
+        &nbsp;to see some smaller projects and code samples.
         </p>
       </div>
     </div>
@@ -67,15 +66,15 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
                 SkilletHub
               </a>
             </h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               SkilletHub is a version control system interface, like GitHub,
-              but for recipes. Our app allows users to <b>create, share,
+              but for recipes. SkilletHub users can <b>create, share,
               edit and iteratively develop open source recipes</b>.
               I worked with two other developers and we used the following
               technologies to create SkilletHub:
-              Javascript, MongoDB, Express, React, Node, AWS, REST API,
+              React, MongoDB, Express, Node, AWS, RESTful API,
               CSS, Bootstrap. My key responsibilites on this project
-              were <b>front-end development</b> and creating a <b>user
+              were <b>front-end development/design</b> and creating a <b>user
               management, authentication, and session system</b>.
               Additionally, I took on the role of <b>project manager</b>
               &nbsp;and gained valuable experience leading our team.
@@ -87,9 +86,12 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               into our development cycle and architecture.
             </p>
           </div>
-          <div className="col-md-4">
-            <p>Pictures</p>
+
+          <div className="col-md-4" style={{ paddingTop: 20 }}>
+            <img style={{ height: 'auto', width: 350 }} src={Images.sh_recipe} alt="SkilletHub" />
+            <img style={{ height: 'auto', width: 350, paddingTop: 10 }} src={Images.sh_user} alt="SkilletHub" />
           </div>
+
         </div>
       </div>
     </div>
@@ -97,13 +99,13 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-11">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>
               <a href="https://github.com/Glossy-Samosa/greenfield" target="_blank" rel="noopener noreferrer">
                 UberEco
               </a>
             </h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               UberEco is a iOS app for <b>finding travel routes around San
               Francisco</b> using the Bay Area Bike Share
               service. The name is tongue-in-cheek but the app
@@ -112,8 +114,10 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               and the Bay Area Bike Share API to create
               UberEco. Some features include: <b>address autofill,
               interactive maps, and turn-by-turn navigation</b>.
-              This was my first time using React Native to create
-              an iOS app. Because of my background in GIS
+              I spent time learning Xcode and Swift last year
+              but have always preferred Javascript so I was excited to
+              use React Native to create an iOS app.
+              Because of my background in GIS
               and mapping, my main responsibilites on this app were
               to <b>design the map interface</b> and <b>create a
               routing algorithm</b> that receives the
@@ -123,9 +127,6 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               some of my favorite things: <b>bikes, maps, and apps!</b>
             </p>
           </div>
-          <div className="col-md-4">
-            <p>Pictures</p>
-          </div>
         </div>
       </div>
     </div>
@@ -133,18 +134,18 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
     <div className="container pt-4" style={{ padding: 0 }}>
       <div className={classes.projectBox}>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-11">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>
               <a href="https://github.com/Glossy-Samosa/coordinatedtortoises" target="_blank" rel="noopener noreferrer">
                 Crypto-tracker
               </a>
             </h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               Crypto-tracker is a web app that displays <b>real-time
               bitcoin transactions and exchange rates</b>.
               This was a challenge that my UberEco team and I took on as
               a legacy project. We identified some interesting
-              features to add to the existing app. On the front page,
+              features to add to the existing app. On the home page,
               we added an <b>interactive globe</b> that displays a dot on
               the map when a bitcoin transaction takes place.
               My main contribution was a <b>search component</b>
@@ -153,9 +154,6 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               &nbsp;an external API, and <b>displaying</b> the
               results. Crypto-tracker was a challenge because... legacy code.
             </p>
-          </div>
-          <div className="col-md-4">
-            <p>Pictures</p>
           </div>
         </div>
       </div>
