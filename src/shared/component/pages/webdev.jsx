@@ -88,8 +88,7 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
           </div>
 
           <div className="col-md-4" style={{ paddingTop: 20 }}>
-            <img style={{ height: 'auto', width: 350 }} src={Images.sh_recipe} alt="SkilletHub" />
-            <img style={{ height: 'auto', width: 350, paddingTop: 10 }} src={Images.sh_user} alt="SkilletHub" />
+            <img style={{ height: 'auto', width: 340, paddingTop: 40 }} src={Images.sh_user} alt="SkilletHub" />
           </div>
 
         </div>

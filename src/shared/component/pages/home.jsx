@@ -76,7 +76,6 @@ const styles = {
     height: '150px',
     margin: '0 auto',
     boxShadow: '1px 1px 1px 1px gray',
-
   },
 }
 
@@ -110,24 +109,24 @@ const HomePage = ({ classes }: { classes: Object }) =>
             <p>
               My name is <b>Caroline Shea</b>&nbsp;and I&#39;m a <b>software developer</b>.
               I am looking for my next career opportunity and would like to work for you!
-              Look around my porfolio to get to know me and my skills.
+              <br />Look around my porfolio to get to know me and my skills.
             </p>
           </div>
         </div>
 
         <div className="col-md-3" style={{ margin: '0 auto', paddingTop: 30 }}>
           <div className="row">
-            <div style={{ padding: 6 }}>
+            <div style={{ padding: 10 }}>
               <a href="https://www.linkedin.com/in/caroline-shea/" target="_blank" rel="noopener noreferrer">
                 <img className={classes.social} src={Images.linkedin} alt="linkedin" />
               </a>
             </div>
-            <div style={{ padding: 6 }}>
+            <div style={{ padding: 10 }}>
               <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">
                 <img className={classes.social} src={Images.github} alt="github" />
               </a>
             </div>
-            <div style={{ padding: 6 }}>
+            <div style={{ padding: 10 }}>
               <a href="https://twitter.com/callmegarol" target="_blank" rel="noopener noreferrer">
                 <img className={classes.social} src={Images.twitter} alt="twitter" />
               </a>
