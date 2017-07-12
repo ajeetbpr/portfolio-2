@@ -6,7 +6,7 @@
     "> 1%"
   ],
   "engines": {
-    "node": "7.x"
+    "node": "7.10.1"
   },
   "scripts": {
     "start": "npm run-script dev:start",
