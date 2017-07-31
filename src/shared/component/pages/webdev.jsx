@@ -42,17 +42,17 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
 
       <div className="col-md-12">
         <p className="pl-4 pb-2">
-        I started making websites during my senior year at the <b>University of
-        Wisconsin - Madison</b>.
-        During undergrad I took classes in <b>Java</b> and <b>Python</b> and learned
+        I became interested in computer science and web development during college.
+        I took classes in <b>Java</b> and <b>Python</b> and learned
         the fundamentals of <b>computer science, data structures, and algorthms</b>.
         I soon fell down the rabbit hole of <b>web development</b> and continued
         to work with <b>Javascript</b> and experiment with new technologies.
-        Last fall I moved to <b>San Francisco</b> to attend a software engineering
+        Last fall I moved to San Francisco to attend a software engineering
         program where I collaborated with classmates to make some <b>really neat apps</b>!
         Below I describe the three largest and <b>most challenging projects</b> I have worked on.
         Check out <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">my GitHub</a>
         &nbsp;to see some smaller projects and code samples.
+        &nbsp;<i>Please note, the apps below are no longer being maintained.</i>
         </p>
       </div>
     </div>

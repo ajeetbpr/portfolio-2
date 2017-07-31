@@ -46,12 +46,14 @@ const CartogPage = ({ classes }: { classes: Object }) =>
 
       <div className="col-md-12">
         <p className="pl-4 pb-2">
-          Geography is arguably one of the most interdisciplinary fields of study.
-          Throughout my undergrad education I was trained to
+          Two years ago I graduated from the University of Wisconsin - Madison
+          with a bachelor&#39;s degree in cartography and geographic information systems.
+          Geography is an especially interdisciplinary field of study and
+          throughout my undergrad education I was trained to
           integrate a paradigm of space and place into my critical thinking
-          and problem solving skills. In pursuit of my geography degree I
-          learned the design principles that drive the map making process,
-          had the opportunity to successfully lead teams towards common goals,
+          and problem solving skills. In pursuit of my degree, I
+          learned the analytical and design principles that drive the map making process,
+          had the opportunity to successfully lead teams towards ambitious goals,
           and developed strong technical skills in GIS, geocomputing, and programming.
         </p>
       </div>
