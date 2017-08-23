@@ -21,7 +21,7 @@ const images = {
   thesis_pdf: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/UW+Shea+Senior+Thesis.pdf',
   italy: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/italy.png',
   wedding: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/wedding.png',
-  resume: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/Caroline_Shea_Resume.pdf',
+  resume: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/CarolineShea_Resume.pdf',
 }
 
 export default images

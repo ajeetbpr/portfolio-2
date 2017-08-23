@@ -43,16 +43,16 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
       <div className="col-md-12">
         <p className="pl-4 pb-2">
         I became interested in computer science and web development during college.
-        I took classes in <b>Java</b> and <b>Python</b> and learned
-        the fundamentals of <b>computer science, data structures, and algorthms</b>.
-        I soon fell down the rabbit hole of <b>web development</b> and continued
-        to work with <b>Javascript</b> and experiment with new technologies.
+        I took classes in Java and Python and learned
+        the fundamentals of computer science, data structures, and algorthms.
+        I soon fell down the rabbit hole of web development and continued
+        to work with Javascript and experiment with new technologies.
         Last fall I moved to San Francisco to attend a software engineering
-        program where I collaborated with classmates to make some <b>really neat apps</b>!
-        Below I describe the three largest and <b>most challenging projects</b> I have worked on.
+        program where I collaborated with classmates to make some really neat apps!
+        Below I describe the three largest and most challenging projects I have worked on.
         Check out <a href="https://github.com/shea12" target="_blank" rel="noopener noreferrer">my GitHub</a>
         &nbsp;to see some smaller projects and code samples.
-        &nbsp;<i>Please note, the apps below are no longer being maintained.</i>
+        &nbsp;<i><b>Please note, the apps below are no longer being maintained.</b></i>
         </p>
       </div>
     </div>
@@ -62,26 +62,26 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
         <div className="row">
           <div className="col-md-8">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>
-              <a href="http://ec2-52-26-208-4.us-west-2.compute.amazonaws.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/shea12/SkilletHub" target="_blank" rel="noopener noreferrer">
                 SkilletHub
               </a>
             </h5>
             <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               SkilletHub is a version control system interface, like GitHub,
-              but for recipes. SkilletHub users can <b>create, share,
-              edit and iteratively develop open source recipes</b>.
+              but for recipes. SkilletHub users can create, share,
+              edit and iteratively develop open source recipes.
               I worked with two other developers and we used the following
               technologies to create SkilletHub:
               React, MongoDB, Express, Node, AWS, RESTful API,
               CSS, Bootstrap. My key responsibilites on this project
-              were <b>front-end development/design</b> and creating a <b>user
-              management, authentication, and session system</b>.
-              Additionally, I took on the role of <b>project manager</b>
+              were front-end development/design and creating a user
+              management, authentication, and session system.
+              Additionally, I took on the role of project manager
               &nbsp;and gained valuable experience leading our team.
               I implemented a twice-daily check in system that ensured
-              we were <b>setting and achieving daily and weekly goals</b>.
+              we were setting and achieving daily and weekly goals.
               My favorite part of working on SkilletHub was getting the
-              chance to quickly <b>pick up new technologies</b> like AWS
+              chance to quickly pick up new technologies like AWS
               Cognito, TravisCI, and Bootstrap and incorporate them
               into our development cycle and architecture.
             </p>
@@ -105,25 +105,25 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               </a>
             </h5>
             <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
-              UberEco is a iOS app for <b>finding travel routes around San
-              Francisco</b> using the Bay Area Bike Share
-              service. The name is tongue-in-cheek but the app
-              is real. I worked alongside three other developers
+              UberEco is a iOS app for finding travel routes around San
+              Francisco using the Bay Area Bike Share
+              service. The name is tongue-in-cheek, we are not associated with Uber.
+              I worked alongside three other developers
               and used React Native, Google Maps API, Express, MongoDB,
               and the Bay Area Bike Share API to create
-              UberEco. Some features include: <b>address autofill,
-              interactive maps, and turn-by-turn navigation</b>.
+              UberEco. Some features include: address autofill,
+              interactive maps, and turn-by-turn navigation.
               I spent time learning Xcode and Swift last year
               but have always preferred Javascript so I was excited to
               use React Native to create an iOS app.
               Because of my background in GIS
               and mapping, my main responsibilites on this app were
-              to <b>design the map interface</b> and <b>create a
-              routing algorithm</b> that receives the
+              to design the map interface and create a
+              routing algorithm that receives the
               users current location, destination, and nearest
               bike stations to each and returns an ideal travel path.
               I loved working on this project because it combined
-              some of my favorite things: <b>bikes, maps, and apps!</b>
+              some of my favorite things: bikes, maps, and apps!
             </p>
           </div>
         </div>
@@ -140,18 +140,18 @@ const WebDevPage = ({ classes }: { classes: Object }) =>
               </a>
             </h5>
             <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
-              Crypto-tracker is a web app that displays <b>real-time
-              bitcoin transactions and exchange rates</b>.
+              Crypto-tracker is a web app that displays real-time
+              bitcoin transactions and exchange rates.
               This was a challenge that my UberEco team and I took on as
               a legacy project. We identified some interesting
               features to add to the existing app. On the home page,
-              we added an <b>interactive globe</b> that displays a dot on
+              we added an interactive globe that displays a dot on
               the map when a bitcoin transaction takes place.
-              My main contribution was a <b>search component</b>
+              My main contribution was a search component
               &nbsp;that allows users to find historical bitcoin price data.
-              I achieved this by <b>parsing</b> user input, <b>querying</b>
-              &nbsp;an external API, and <b>displaying</b> the
-              results. Crypto-tracker was a challenge because... legacy code.
+              I achieved this by parsing user input, querying
+              &nbsp;an external API, and displaying the
+              results.
             </p>
           </div>
         </div>
