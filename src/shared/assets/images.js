@@ -22,6 +22,7 @@ const images = {
   italy: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/italy.png',
   wedding: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/wedding.png',
   resume: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/CarolineShea_Resume.pdf',
+  ticktock: 'https://s3.us-east-2.amazonaws.com/portfolio-assets-cas/ticktock.png',
 }
 
 export default images
