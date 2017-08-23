@@ -64,7 +64,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
         <div className="row">
           <div className="col-md-7">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>Senior Thesis: Madison Parks</h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               My senior thesis is the culmination of my cartography and GIS
               coursework at UW. I worked with three classmates to
               combine quantitative and qualitative research methods,
@@ -74,7 +74,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
               GIS expert on my team, my responsibilities on this project were to
               create GIS layers from our field data, gather
               census block level demographic and economic data, and create
-              cartograpic products that depict the relationship between the two.
+              cartographic products that depict the relationship between the two.
               We prepared our research in a power point presentation and had the opportunity
               to deliver our findings to our professors and peers at the UW-Madison
               undergraduate colloquium.
@@ -96,9 +96,9 @@ const CartogPage = ({ classes }: { classes: Object }) =>
         <div className="row">
           <div className="col-md-6">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>Cartographic Design: Travels of Hans Christian Andersen</h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               For an advanced cartographic design course, I created a vintage
-              inspired map of Danish author, Hans Christian Anderson&#39;s extensive
+              inspired map of Danish author Hans Christian Anderson&#39;s extensive
               travels around Europe during the mid 1800s. In this class, I focused
               on three aspects of static cartography: how maps are seen, how maps
               are understood, and how maps become meaningful. Within these areas, I
@@ -123,7 +123,7 @@ const CartogPage = ({ classes }: { classes: Object }) =>
         <div className="row">
           <div className="col-md-11">
             <h5 className="container mb-10 pt-2" style={{ paddingBottom: 10, marginTop: 10 }}>GIS Applications: Off-Campus Housing</h5>
-            <p className="pl-4 pb-2" style={{ 'font-size': '14px' }}>
+            <p className="pl-4 pb-2" style={{ fontSize: '14px' }}>
               Prior to my senior thesis, this project marked the culmination
               of my geographic information systems specific coursework. This
               included gathering raw data on new campus-adjacent apartment complexes

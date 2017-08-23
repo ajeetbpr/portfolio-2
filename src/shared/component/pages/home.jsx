@@ -103,13 +103,13 @@ const HomePage = ({ classes }: { classes: Object }) =>
           <img className={classes.myface} src={Images.wedding} alt="my face" />
         </div>
 
-        <div className="col-md-6" style={{ height: 140 }}>
+        <div className="col-md-6" style={{ height: 140, textAlign: 'center' }}>
           <div className={classes.banner}>
             <h4>Hey there!</h4>
             <p>
               My name is <b>Caroline Shea</b>&nbsp;and I&#39;m a <b>software developer</b>.
               I am looking for my next career opportunity and would like to work for you!
-              <br />Look around my porfolio to get to know me and my skills.
+              <br />Have a look around to get to know me and my skills.
             </p>
           </div>
         </div>
@@ -145,7 +145,7 @@ const HomePage = ({ classes }: { classes: Object }) =>
 
             <div className={classes.onHover}>
               <div className={classes.outerBox}>
-                <img className={classes.webImage} src={Images.code_shot} alt="oops" />
+                <img className={classes.webImage} src={Images.ticktock} alt="oops" />
               </div>
             </div>
             <div className={classes.headingBar} style={{ backgroundColor: '#41dff4' }}>
